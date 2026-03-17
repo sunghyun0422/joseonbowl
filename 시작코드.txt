@@ -1,0 +1,9 @@
+시작코드
+npm run dev
+
+cnml tokz yynm xtcg
+
+업로드 코드
+git add .
+git commit -m "add naver verification file"
+git push

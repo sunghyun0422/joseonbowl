@@ -1,4 +1,5 @@
 import Link from "next/link";
+import RecipeFilm from "@/components/RecipeFilm";
 
 export default function AboutPage() {
   return (
@@ -61,15 +62,25 @@ export default function AboutPage() {
 
               <div className="grid gap-3">
                 <div className="rounded-2xl border border-neutral-200 bg-white px-5 py-4 flex items-center justify-between">
-                  <span className="text-xs tracking-[0.28em] font-bold text-neutral-500">FOCUS</span>
-                  <span className="text-sm md:text-base font-black tracking-tight">ONE BOWL</span>
+                  <span className="text-xs tracking-[0.28em] font-bold text-neutral-500">
+                    FOCUS
+                  </span>
+                  <span className="text-sm md:text-base font-black tracking-tight">
+                    ONE BOWL
+                  </span>
                 </div>
                 <div className="rounded-2xl border border-neutral-200 bg-white px-5 py-4 flex items-center justify-between">
-                  <span className="text-xs tracking-[0.28em] font-bold text-neutral-500">STANDARD</span>
-                  <span className="text-sm md:text-base font-black tracking-tight">SAME QUALITY</span>
+                  <span className="text-xs tracking-[0.28em] font-bold text-neutral-500">
+                    STANDARD
+                  </span>
+                  <span className="text-sm md:text-base font-black tracking-tight">
+                    SAME QUALITY
+                  </span>
                 </div>
                 <div className="rounded-2xl border border-neutral-200 bg-white px-5 py-4 flex items-center justify-between">
-                  <span className="text-xs tracking-[0.28em] font-bold text-neutral-500">PRICE</span>
+                  <span className="text-xs tracking-[0.28em] font-bold text-neutral-500">
+                    PRICE
+                  </span>
                   <span className="text-sm md:text-base font-black tracking-tight text-amber-700">
                     3,000원
                   </span>
@@ -114,12 +125,16 @@ export default function AboutPage() {
               >
                 <p className="text-xs tracking-[0.3em] font-bold text-black/35">{x.num}</p>
                 <h3 className="mt-5 text-xl font-black tracking-tight">{x.title}</h3>
-                <p className="mt-4 text-sm md:text-base text-neutral-600 leading-relaxed">{x.desc}</p>
+                <p className="mt-4 text-sm md:text-base text-neutral-600 leading-relaxed">
+                  {x.desc}
+                </p>
               </div>
             ))}
           </div>
         </div>
       </section>
+
+      <RecipeFilm />
 
       {/* DINE-IN */}
       <section className="mt-20 md:mt-24">
@@ -134,8 +149,8 @@ export default function AboutPage() {
               </h2>
 
               <p className="mt-6 text-sm md:text-base text-neutral-600 leading-relaxed">
-                조선한그릇의 목표는 “편리함”이 아니라 “정확함”입니다.
-                한 그릇이 매장에서 가장 좋은 상태로 제공되도록 설계되어 있습니다.
+                조선한그릇의 목표는 “편리함”이 아니라 “정확함”입니다. 한 그릇이 매장에서
+                가장 좋은 상태로 제공되도록 설계되어 있습니다.
               </p>
 
               <p className="mt-6 text-sm md:text-base text-neutral-600 leading-relaxed">
@@ -158,9 +173,11 @@ export default function AboutPage() {
                 ].map(([k, v]) => (
                   <div
                     key={k}
-                    className="rounded-2xl border border-neutral-200 bg-white px-5 py-4 flex items-center justify-between"
+                    className="flex items-center justify-between rounded-2xl border border-neutral-200 bg-white px-5 py-4"
                   >
-                    <span className="text-xs tracking-[0.28em] font-bold text-neutral-500">{k}</span>
+                    <span className="text-xs tracking-[0.28em] font-bold text-neutral-500">
+                      {k}
+                    </span>
                     <span
                       className={`text-sm md:text-base font-black tracking-tight ${
                         k === "가격" ? "text-amber-700" : "text-black"
@@ -176,7 +193,7 @@ export default function AboutPage() {
                 <p className="text-xs tracking-[0.28em] uppercase font-bold text-neutral-500">
                   NOTE
                 </p>
-                <p className="mt-2 text-sm text-neutral-600 leading-relaxed">
+                <p className="mt-2 text-sm leading-relaxed text-neutral-600">
                   이 구조가 유지되는 한, 브랜드는 흔들리지 않습니다.
                 </p>
               </div>
