@@ -1,5 +1,4 @@
 import Link from "next/link";
-import RecipeFilm from "@/components/RecipeFilm";
 
 export default function AboutPage() {
   return (
@@ -133,8 +132,6 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
-
-      <RecipeFilm />
 
       {/* DINE-IN */}
       <section className="mt-20 md:mt-24">
