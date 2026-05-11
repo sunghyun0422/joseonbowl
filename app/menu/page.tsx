@@ -137,7 +137,7 @@ export default function MenuPage() {
                   {[
                     ["면", "쌀국수"],
                     ["육수", "자체 육수"],
-                    ["토핑", "콩나물, 파"],
+                    ["토핑", "애호박, 당근, 파"],
                     ["옵션", "현장 안내"],
                   ].map(([k, v]) => (
                     <div
@@ -223,7 +223,7 @@ export default function MenuPage() {
               </div>
 
               <p className="mt-6 text-sm md:text-base text-neutral-600 leading-relaxed">
-                쌀치국수의 깊은 육수와 가장 잘 어울리는 조합입니다. 
+                쌀치국수의 깊은 육수와 가장 잘 어울리는 조합입니다.
                 속이 꽉 찬 고소한 만두가 한 그릇의 완성도를 높여줍니다.
               </p>
 
