@@ -8,8 +8,8 @@ export default function Home() {
       <section className="hero -mt-20">
         <div className="hero-media">
           <Image
-            src="/images/hero.jpg"
-            alt="조선한그릇 대표 이미지"
+            src="/images/ssalchi.jpg"
+            alt="조선한그릇 쌀치국수"
             fill
             priority
             className="object-cover"
@@ -21,9 +21,9 @@ export default function Home() {
               <p className="kicker-on-hero">JOSUN HANGRUEOT</p>
 
               <h1 className="hero-title">
-                쌀국수 하나.
+                쌀치국수 & 만두.
                 <br />
-                <span className="price-hero">3,000원</span>
+                <span className="price-hero">3,500원 / 2,000원</span>
               </h1>
 
               <p className="hero-sub">
@@ -43,8 +43,8 @@ export default function Home() {
               </div>
 
               <div className="hero-meta">
-                <div className="hero-chip">MENU 1</div>
-                <div className="hero-chip hero-chip-accent">3,000</div>
+                <div className="hero-chip">MAIN: 쌀치국수</div>
+                <div className="hero-chip hero-chip-accent">SIDE: 만두</div>
                 <div className="hero-chip">DINE-IN ONLY</div>
               </div>
             </div>
@@ -62,9 +62,9 @@ export default function Home() {
             </div>
 
             <div className="strip-right">
-              <span className="badge">쌀국수 1</span>
-              <span className="badge badge-accent">3,000원</span>
-              <span className="badge">매장 식사</span>
+              <span className="badge">쌀치국수 3,500원</span>
+              <span className="badge badge-accent">만두 2,000원</span>
+              <span className="badge">본점: 시흥 정왕동</span>
             </div>
           </div>
         </div>
@@ -93,13 +93,13 @@ export default function Home() {
             <div className="store-card-neo">
               <div className="store-media">
                 <Image
-                  src="/images/hero.jpg"
-                  alt="조선한그릇 취급 매장"
+                  src="/images/poster.jpg"
+                  alt="조선한그릇 본점 오픈 포스터"
                   fill
                   className="object-cover"
                 />
                 <div className="store-media-overlay" />
-                <div className="store-media-tag">JOSUN HANGRUEOT</div>
+                <div className="store-media-tag">OFFICIAL OPEN: 6/1</div>
               </div>
 
               <div className="store-body">
@@ -114,20 +114,20 @@ export default function Home() {
                   </div>
 
                   <div className="store-badge-neo">
-                    <span>쌀국수</span>
+                    <span>쌀치국수</span>
                     <span className="store-badge-dot">•</span>
-                    <span className="store-price-neo">3,000원</span>
+                    <span className="store-price-neo">3,500원</span>
                   </div>
                 </div>
 
                 <div className="store-rows-neo">
                   <div className="store-row-neo">
-                    <span className="store-label">안내</span>
-                    <span className="store-value">가까운 취급 매장 찾기</span>
+                    <span className="store-label">메뉴</span>
+                    <span className="store-value">쌀치국수 & 만두</span>
                   </div>
                   <div className="store-row-neo">
                     <span className="store-label">확인</span>
-                    <span className="store-value">주소/지도/영업/휴무</span>
+                    <span className="store-value">조선한그릇 본점 (시흥 정왕)</span>
                   </div>
                   <div className="store-row-neo">
                     <span className="store-label">운영</span>
@@ -135,7 +135,7 @@ export default function Home() {
                   </div>
                   <div className="store-row-neo">
                     <span className="store-label">가격</span>
-                    <span className="store-value store-price-neo">3,000원</span>
+                    <span className="store-value store-price-neo">3,500원 / 2,000원</span>
                   </div>
                 </div>
 
@@ -161,11 +161,11 @@ export default function Home() {
                   <div className="rules-head">
                     <p className="kicker">RULES</p>
                     <p className="rules-title">
-                      메뉴는 하나.
+                      쌀치국수 <span className="rules-accent">3,500원</span>.
                       <br />
-                      가격은 <span className="rules-accent">3,000원</span>.
+                      만두(4알) <span className="rules-accent">2,000원</span>.
                     </p>
-                    <p className="rules-sub">매장 식사 전용.</p>
+                    <p className="rules-sub">조선한그릇의 새로운 시작.</p>
                   </div>
 
                   <div className="rules-grid">

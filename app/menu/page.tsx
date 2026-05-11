@@ -16,9 +16,9 @@ export default function MenuPage() {
               {/* LEFT */}
               <div>
                 <h1 className="text-4xl md:text-6xl font-black tracking-tight leading-[1.04]">
-                  쌀국수 하나.
+                  쌀치국수 & 만두.
                   <br />
-                  <span className="text-amber-600">3,000원</span>
+                  <span className="text-amber-600">3,500원 / 2,000원</span>
                 </h1>
 
                 <p className="mt-8 text-base md:text-lg leading-relaxed text-neutral-600 max-w-xl">
@@ -29,10 +29,10 @@ export default function MenuPage() {
 
                 <div className="mt-10 flex flex-wrap gap-2">
                   <span className="inline-flex items-center rounded-full px-3 py-1 text-xs font-bold border border-neutral-200 bg-white text-black/70">
-                    MENU 1
+                    MAIN: 쌀치국수
                   </span>
                   <span className="inline-flex items-center rounded-full px-3 py-1 text-xs font-bold border border-amber-200 bg-amber-50 text-amber-700">
-                    3,000
+                    SIDE: 만두
                   </span>
                   <span className="inline-flex items-center rounded-full px-3 py-1 text-xs font-bold border border-neutral-200 bg-white text-black/70">
                     DINE-IN ONLY
@@ -77,8 +77,8 @@ export default function MenuPage() {
             <div className="rounded-[28px] border border-neutral-200 bg-white overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,.04)]">
               <div className="relative aspect-[4/3] bg-black">
                 <Image
-                  src="/images/menu.jpg"
-                  alt="조선한그릇 쌀국수"
+                  src="/images/ssalchi.jpg"
+                  alt="조선한그릇 쌀치국수"
                   fill
                   className="object-cover"
                   priority
@@ -110,12 +110,12 @@ export default function MenuPage() {
               </p>
 
               <h2 className="mt-4 text-3xl md:text-4xl font-black tracking-tight">
-                조선한그릇 쌀국수
+                조선한그릇 쌀치국수
               </h2>
 
               <div className="mt-5 flex items-center gap-3 flex-wrap">
                 <span className="inline-flex items-center rounded-full px-3 py-1 text-xs font-bold border border-amber-200 bg-amber-50 text-amber-700">
-                  3,000원
+                  3,500원
                 </span>
                 <span className="text-xs text-neutral-500">
                   * 가격/구성은 운영에 따라 변동될 수 있습니다.
@@ -135,7 +135,7 @@ export default function MenuPage() {
 
                 <div className="mt-4 grid gap-3">
                   {[
-                    ["면", "쌀국수"],
+                    ["면", "쌀치국수"],
                     ["육수", "자체 육수"],
                     ["토핑", "콩나물, 파"],
                     ["옵션", "현장 안내"],
@@ -174,6 +174,84 @@ export default function MenuPage() {
                 <Link href="/contact" className="btn btn-accent">
                   문의
                 </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* SIDE MENU (MANDU) */}
+      <section className="mt-14 md:mt-16">
+        <div className="container">
+          <div className="grid gap-6 md:grid-cols-2 items-start">
+            {/* 설명 카드 (왼쪽으로 배치해 리듬감 주기) */}
+            <div className="rounded-[28px] border border-neutral-200 bg-white p-7 md:p-8 shadow-[0_20px_60px_rgba(0,0,0,.04)] order-2 md:order-1">
+              <p className="text-xs tracking-[0.28em] uppercase font-bold text-neutral-500">
+                SIDE MENU
+              </p>
+
+              <h2 className="mt-4 text-3xl md:text-4xl font-black tracking-tight">
+                조선한그릇 만두
+              </h2>
+
+              <div className="mt-5 flex items-center gap-3 flex-wrap">
+                <span className="inline-flex items-center rounded-full px-3 py-1 text-xs font-bold border border-amber-200 bg-amber-50 text-amber-700">
+                  2,000원
+                </span>
+                <span className="text-xs text-neutral-500">
+                  * 4알 기준 (찐만두)
+                </span>
+              </div>
+
+              <p className="mt-6 text-sm md:text-base text-neutral-600 leading-relaxed">
+                쌀치국수의 깊은 육수와 가장 잘 어울리는 조합입니다. 
+                속이 꽉 찬 고소한 만두가 한 그릇의 완성도를 높여줍니다.
+              </p>
+
+              {/* 구성 */}
+              <div className="mt-7 rounded-[22px] border border-neutral-200 bg-neutral-50 p-6">
+                <p className="text-xs tracking-[0.28em] uppercase font-bold text-neutral-500">
+                  DETAILS
+                </p>
+
+                <div className="mt-4 grid gap-3">
+                  {[
+                    ["수량", "4알"],
+                    ["조리", "찐만두"],
+                    ["특징", "고기만두"],
+                  ].map(([k, v]) => (
+                    <div
+                      key={k}
+                      className="rounded-2xl border border-neutral-200 bg-white px-5 py-4 flex items-center justify-between"
+                    >
+                      <span className="text-xs tracking-[0.28em] font-bold text-neutral-500">
+                        {k}
+                      </span>
+                      <span className="text-sm md:text-base font-black tracking-tight">
+                        {v}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            {/* 이미지 카드 */}
+            <div className="rounded-[28px] border border-neutral-200 bg-white overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,.04)] order-1 md:order-2">
+              <div className="relative aspect-[4/3] bg-black">
+                <Image
+                  src="/images/mandu.jpg"
+                  alt="조선한그릇 만두"
+                  fill
+                  className="object-cover"
+                />
+                <div
+                  className="absolute inset-0"
+                  style={{
+                    background:
+                      "radial-gradient(800px 280px at 50% 20%, rgba(0,0,0,.05), rgba(0,0,0,.45)), linear-gradient(180deg, rgba(0,0,0,.05) 0%, rgba(0,0,0,.50) 100%)",
+                  }}
+                />
               </div>
             </div>
           </div>

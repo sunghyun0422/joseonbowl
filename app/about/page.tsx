@@ -18,9 +18,9 @@ export default function AboutPage() {
             </h1>
 
             <p className="mt-8 text-base md:text-lg leading-relaxed text-neutral-600">
-              조선한그릇은 “메뉴를 늘려서 성장”하지 않습니다.
+              조선한그릇은 메뉴의 숫자보다 “기준의 선명함”에 집중합니다.
               <br className="hidden md:block" />
-              단 하나의 쌀국수를 <span className="text-amber-600 font-black">3,000원</span>에,
+              가장 정확한 쌀치국수와 만두를 <span className="text-amber-600 font-black">3,500원 / 2,000원</span>에,
               매일 같은 품질로 제공합니다.
             </p>
 
@@ -29,7 +29,7 @@ export default function AboutPage() {
                 MENU 1
               </span>
               <span className="inline-flex items-center rounded-full px-3 py-1 text-xs font-bold border border-amber-200 bg-amber-50 text-amber-700">
-                3,000
+                3,500
               </span>
               <span className="inline-flex items-center rounded-full px-3 py-1 text-xs font-bold border border-neutral-200 bg-white text-black/70">
                 DINE-IN ONLY
@@ -81,7 +81,7 @@ export default function AboutPage() {
                     PRICE
                   </span>
                   <span className="text-sm md:text-base font-black tracking-tight text-amber-700">
-                    3,000원
+                    3,500원
                   </span>
                 </div>
               </div>
@@ -163,8 +163,8 @@ export default function AboutPage() {
 
               <div className="mt-6 grid gap-3">
                 {[
-                  ["메뉴", "쌀국수 1"],
-                  ["가격", "3,000원"],
+                  ["메뉴", "쌀치국수 & 만두"],
+                  ["가격", "3,500원"],
                   ["운영", "방문 식사 전용"],
                   ["목표", "품질 편차 최소화"],
                 ].map(([k, v]) => (
@@ -208,9 +208,9 @@ export default function AboutPage() {
             </p>
 
             <p className="mt-7 text-2xl md:text-4xl font-black tracking-tight leading-[1.08]">
-              단 하나의 메뉴.
+              본질에 집중합니다.
               <br />
-              변하지 않는 가격.
+              정직한 가격.
               <br />
               흔들리지 않는 기준.
             </p>

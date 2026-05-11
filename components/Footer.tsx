@@ -14,7 +14,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="flex items-center gap-3">
             <p className="font-black tracking-tight">조선한그릇</p>
-            <span className="badge badge-accent">3,000원</span>
+            <span className="badge badge-accent">3,500원</span>
             <span className="badge">DINE-IN ONLY</span>
           </div>
 

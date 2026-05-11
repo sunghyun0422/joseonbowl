@@ -4,11 +4,11 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "조선한그릇",
+  title: "조선한그릇 - 쌀치국수 & 만두",
   icons: {
     icon: "/logo-icon.png",
   },
-  description: "쌀국수 3,000원 · 메뉴 1개 · 방문 식사 전용",
+  description: "쌀치국수 3,500원 · 만두 2,000원 · 조선한그릇 본점",
 };
 
 export default function RootLayout({
