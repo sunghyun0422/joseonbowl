@@ -96,7 +96,7 @@ export default function Home() {
                   src="/images/poster.jpg"
                   alt="조선한그릇 본점 오픈 포스터"
                   fill
-                  className="object-cover"
+                  className="object-contain bg-black/5"
                 />
                 <div className="store-media-overlay" />
                 <div className="store-media-tag">OFFICIAL OPEN: 6/1</div>
@@ -175,7 +175,7 @@ export default function Home() {
                     </div>
                     <div className="rule">
                       <p className="rule-k">PRICE</p>
-                      <p className="rule-v rules-accent">3,000</p>
+                      <p className="rule-v rules-accent">3,500</p>
                     </div>
                     <div className="rule">
                       <p className="rule-k">SERVICE</p>
