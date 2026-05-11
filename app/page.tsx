@@ -91,7 +91,7 @@ export default function Home() {
           <div className="store-grid-neo">
             {/* LEFT CARD */}
             <div className="store-card-neo">
-              <div className="store-media">
+              <div className="relative h-[320px] md:h-[420px] w-full bg-black">
                 <Image
                   src="/images/poster.jpg"
                   alt="조선한그릇 본점 오픈 포스터"
@@ -171,7 +171,7 @@ export default function Home() {
                   <div className="rules-grid">
                     <div className="rule">
                       <p className="rule-k">MENU</p>
-                      <p className="rule-v">1</p>
+                      <p className="rule-v text-base md:text-lg">단일 메뉴 + 사이드</p>
                     </div>
                     <div className="rule">
                       <p className="rule-k">PRICE</p>

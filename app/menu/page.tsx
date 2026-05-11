@@ -135,7 +135,7 @@ export default function MenuPage() {
 
                 <div className="mt-4 grid gap-3">
                   {[
-                    ["면", "쌀치국수"],
+                    ["면", "쌀국수"],
                     ["육수", "자체 육수"],
                     ["토핑", "콩나물, 파"],
                     ["옵션", "현장 안내"],
@@ -184,8 +184,27 @@ export default function MenuPage() {
       <section className="mt-14 md:mt-16">
         <div className="container">
           <div className="grid gap-6 md:grid-cols-2 items-start">
-            {/* 설명 카드 (왼쪽으로 배치해 리듬감 주기) */}
-            <div className="rounded-[28px] border border-neutral-200 bg-white p-7 md:p-8 shadow-[0_20px_60px_rgba(0,0,0,.04)] order-2 md:order-1">
+            {/* 이미지 카드 */}
+            <div className="rounded-[28px] border border-neutral-200 bg-white overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,.04)]">
+              <div className="relative aspect-[4/3] bg-black">
+                <Image
+                  src="/images/mandu.jpg"
+                  alt="조선한그릇 만두"
+                  fill
+                  className="object-cover"
+                />
+                <div
+                  className="absolute inset-0"
+                  style={{
+                    background:
+                      "radial-gradient(800px 280px at 50% 20%, rgba(0,0,0,.05), rgba(0,0,0,.45)), linear-gradient(180deg, rgba(0,0,0,.05) 0%, rgba(0,0,0,.50) 100%)",
+                  }}
+                />
+              </div>
+            </div>
+
+            {/* 설명 카드 */}
+            <div className="rounded-[28px] border border-neutral-200 bg-white p-7 md:p-8 shadow-[0_20px_60px_rgba(0,0,0,.04)]">
               <p className="text-xs tracking-[0.28em] uppercase font-bold text-neutral-500">
                 SIDE MENU
               </p>
@@ -233,25 +252,6 @@ export default function MenuPage() {
                     </div>
                   ))}
                 </div>
-              </div>
-            </div>
-
-            {/* 이미지 카드 */}
-            <div className="rounded-[28px] border border-neutral-200 bg-white overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,.04)] order-1 md:order-2">
-              <div className="relative aspect-[4/3] bg-black">
-                <Image
-                  src="/images/mandu.jpg"
-                  alt="조선한그릇 만두"
-                  fill
-                  className="object-cover"
-                />
-                <div
-                  className="absolute inset-0"
-                  style={{
-                    background:
-                      "radial-gradient(800px 280px at 50% 20%, rgba(0,0,0,.05), rgba(0,0,0,.45)), linear-gradient(180deg, rgba(0,0,0,.05) 0%, rgba(0,0,0,.50) 100%)",
-                  }}
-                />
               </div>
             </div>
           </div>
