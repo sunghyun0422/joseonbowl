@@ -39,13 +39,12 @@ export default function Header() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-colors duration-300 ${headerBg}`}
     >
-      <div className="mx-auto max-w-[1760px] px-4 md:px-10 h-20 relative flex items-center">
+      <div className="container h-20 relative flex items-center">
         {/* ✅ LEFT: Logo (클릭 영역 깔끔 + 살짝 오른쪽 + 고급 타이포) */}
         <Link
           href="/"
           className={[
             "inline-flex items-center", // ✅ 클릭 영역을 글자 주변으로
-            "ml-8 md:ml-24",            // ✅ '오른쪽으로 이동'은 padding말고 margin
             "select-none",
             "transition-colors",
             logoColor,
